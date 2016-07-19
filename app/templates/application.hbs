@@ -1,11 +1,14 @@
 <!-- app/templates/application.hbs -->
 <div class="container">
 	<h2 id="title">Flickr feed:</h2>
-	<ul>
+	<ul class="list-group">
 	  {{#each photo in photos}}
-		<li>
-			{{photo.title}} ({{photo.username}})<br>
-			<img src="{{photo.url}}" />
+		<li class="list-group-item">
+			
+{{photo.title}} ({{photo.username}})
+
+<img class="feed-img" src="{{photo.url}}" />
+
 		</li>
 	  {{/each}}
 	</ul>
